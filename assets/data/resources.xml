@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <sprite atlasID="0" default="5" defaultAnimation="5" desc="" height="100" id="7" name="actor2" shared="false" width="100">
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="200" id="5" loop="true" name="walk down" numframes="6" originx="50" originy="50" sync="false" version="2" width="300">
+            <poly data="4,20,20,80,20,80,80,20,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="200" id="6" loop="true" name="walk right" numframes="6" originx="50" originy="50" sync="false" version="2" width="300">
+            <poly data="4,30,10,90,10,90,90,30,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="200" id="7" loop="true" name="walk left" numframes="6" originx="50" originy="50" sync="false" version="2" width="300">
+            <poly data="4,10,10,70,10,70,80,10,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="200" id="8" loop="true" name="walk up" numframes="6" originx="50" originy="50" sync="false" version="2" width="300">
+            <poly data="4,20,10,80,10,80,90,20,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="9" loop="true" name="walk up idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,20,10,80,10,80,90,20,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="10" loop="true" name="walk down idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,20,20,80,20,80,80,20,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="11" loop="true" name="walk left idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,10,20,70,20,70,90,10,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="12" loop="true" name="walk right idle" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,30,10,90,10,90,90,30,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music atlasID="0" desc="" id="36" loop="true" name="bingbing" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="37" loop="true" name="bongbong" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="24" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="boom" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="true">
+        <snippets>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="3"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="128" id="25" name="boom" shared="false" width="128">
+        <anim across="4" down="4" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="512" id="0" loop="false" name="Animation 0" numframes="16" originx="64" originy="64" sync="false" version="2" width="512"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="3" id="22" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="cat" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="23" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="0.0"/>
+            </s>
+            <s enabled="true" id="3">
+                <prop id="32" list="0" val="p1_down"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="33" list="0" val="p1_left"/>
+                <prop id="34" list="0" val="p1_right"/>
+                <prop id="38" list="0" val="0.0"/>
+                <prop id="39" list="0" val="0.0"/>
+                <prop id="40" list="0" val="true"/>
+                <prop id="11" list="0" val="30.0"/>
+                <prop id="44" list="0" val="false"/>
+                <prop id="45" list="0" val="false"/>
+                <prop id="46" list="0" val="true"/>
+                <prop id="47" list="0" val="false"/>
+                <prop id="49" list="0" val="false"/>
+                <prop id="50" list="0" val="idle up"/>
+                <prop id="51" list="0" val="up"/>
+                <prop id="52" list="0" val="idle down"/>
+                <prop id="53" list="0" val="down"/>
+                <prop id="54" list="0" val="idle left"/>
+                <prop id="55" list="0" val="left"/>
+                <prop id="56" list="0" val="idle right"/>
+                <prop id="57" list="0" val="right"/>
+                <prop id="58" list="0" val="true"/>
+                <prop id="31" list="0" val="p1_up"/>
+            </s>
+            <s enabled="true" id="19">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="p1_shoot"/>
+                <prop id="2" list="0" val="38"/>
+                <prop id="3" list="0" val="39"/>
+            </s>
+            <s enabled="true" id="24">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="p1_shoot"/>
+                <prop id="2" list="0" val="MEOW!"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="32" list="0" val="Based on Animations"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="50.0"/>
+                <prop id="4" list="0" val="26"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="13" list="0" val="p1_shoot"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="16" list="0" val="true"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="false"/>
+                <prop id="19" list="0" val="1.0"/>
+                <prop id="20" list="0" val="0.0"/>
+                <prop id="21" list="0" val="false"/>
+                <prop id="22" list="0" val="false"/>
+                <prop id="23" list="0" val="3.0"/>
+                <prop id="24" list="0" val="5.0"/>
+                <prop id="25" list="0" val="5.0"/>
+                <prop id="26" list="0" val="false"/>
+                <prop id="28" list="0" val="up"/>
+                <prop id="29" list="0" val="down"/>
+                <prop id="30" list="0" val="left"/>
+                <prop id="31" list="0" val="right"/>
+            </s>
+            <s enabled="true" id="15">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="10" defaultAnimation="10" desc="" height="32" id="23" name="cat" shared="false" width="32">
+        <anim across="10" down="10" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="320" id="16" loop="true" name="base Copy" numframes="96" originx="16" originy="16" sync="false" version="2" width="320">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="17" loop="true" name="idle left" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="18" loop="true" name="idle right" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="19" loop="true" name="idle up" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="20" loop="true" name="idle down" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="10" loop="true" name="idle" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="11" loop="true" name="down" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="12" loop="true" name="left" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="14" loop="true" name="up" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="15" loop="true" name="right" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,5,10,25,10,25,30,5,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="10" defaultAnimation="10" desc="" height="32" id="32" name="cat" shared="false" width="32">
+        <anim across="10" down="10" durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100" height="320" id="16" loop="true" name="base Copy" numframes="96" originx="16" originy="16" sync="false" version="2" width="320">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="17" loop="true" name="idle left" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="18" loop="true" name="idle right" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="19" loop="true" name="idle up" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="20" loop="true" name="idle down" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="10" loop="true" name="idle" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="11" loop="true" name="down" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="12" loop="true" name="left" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="14" loop="true" name="up" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="64" id="15" loop="true" name="right" numframes="3" originx="16" originy="16" sync="false" version="2" width="64">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 10" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="42" name="controls bg" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <custom-block blocktag="custom-14" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="14" message="Damage" name="Damage" oid="-1" return="void" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="4" fixedrot="false" fric="0.2" gid="3" id="3" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="eiffeltower" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="180" id="4" name="eiffeltower306224_960_720" shared="false" width="90">
+        <anim across="1" down="1" durations="100" height="180" id="0" loop="true" name="Animation 0" numframes="1" originx="0" originy="0" sync="false" version="2" width="90">
+            <poly data="3,46,54,28,159,73,160" density="0.1" fric="0.2" gid="-1000" id="0" name="" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <custom-block blocktag="custom-12" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="12" message="FullRestore" name="FullRestore" oid="-1" return="void" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-17" blocktype="NORMAL" code="cast(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetCurrentHealth&quot;), Float)" desc="" global="false" gui="Current Health for %0" id="17" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="number" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-15" blocktype="NORMAL" code="cast(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetInvincibility&quot;), Bool)" desc="" global="false" gui="%0 Is Invincible?" id="15" message="GetInvincibility" name="GetInvincibility" oid="-1" return="boolean" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-16" blocktype="NORMAL" code="cast(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetMaxHealth&quot;), Float)" desc="" global="false" gui="Maximum Health For %0" id="16" message="GetMaxHealth" name="GetMaxHealth" oid="-1" return="number" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-13" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Heal&quot;, []);" desc="Adds a specific amount of health to the Actor." global="false" gui="Heal %0 By %1" id="13" message="Heal" name="Heal" oid="-1" return="void" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="31" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="idle cat" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
+        <snippets>
+            <s enabled="true" id="22">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="23">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <music atlasID="0" desc="" id="38" loop="true" name="meow1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="39" loop="true" name="meow2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="43" loop="true" name="music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="531" id="21" name="paris" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="840" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="rainbow" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="false">
+        <snippets>
+            <s enabled="true" id="17">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="17" list="0" val="10.0"/>
+                <prop id="22" list="0" val="31"/>
+                <prop id="23" list="0" val="5.0"/>
+                <prop id="24" list="0" val="360.0"/>
+                <prop id="25" list="0" val="5.0"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="0.0"/>
+                <prop id="29" list="0" val="31"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="78" id="27" name="rainbow" shared="false" width="75">
+        <anim across="1" down="1" durations="100" height="78" id="0" loop="false" name="Animation 0" numframes="1" originx="37" originy="39" sync="false" version="2" width="75">
+            <poly data="4,25,25,50,25,50,50,25,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <custom-block blocktag="custom-11" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetHealth&quot;, []);" desc="" global="false" gui="Set Health For %0 To %1" id="11" message="SetHealth" name="SetHealth" oid="-1" return="void" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-10" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetInvincibility&quot;, []);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="10" message="SetInvincibility" name="SetInvincibility" oid="-1" return="void" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Status" order="1" type="boolean"/>
+    </custom-block>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="41" name="title_bg" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="5" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="trump" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="0.0"/>
+            </s>
+            <s enabled="true" id="3">
+                <prop id="32" list="0" val="p2 down"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="33" list="0" val="p2 left"/>
+                <prop id="34" list="0" val="p2 right"/>
+                <prop id="38" list="0" val="0.0"/>
+                <prop id="39" list="0" val="0.0"/>
+                <prop id="40" list="0" val="true"/>
+                <prop id="11" list="0" val="30.0"/>
+                <prop id="44" list="0" val="false"/>
+                <prop id="45" list="0" val="false"/>
+                <prop id="46" list="0" val="true"/>
+                <prop id="47" list="0" val="false"/>
+                <prop id="49" list="0" val="false"/>
+                <prop id="50" list="0" val="walk up"/>
+                <prop id="51" list="0" val="walk up"/>
+                <prop id="52" list="0" val="walk down"/>
+                <prop id="53" list="0" val="walk down"/>
+                <prop id="54" list="0" val="walk left"/>
+                <prop id="55" list="0" val="walk left"/>
+                <prop id="56" list="0" val="walk right"/>
+                <prop id="57" list="0" val="walk right"/>
+                <prop id="58" list="0" val="true"/>
+                <prop id="31" list="0" val="p2 up"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="32" list="0" val="Based on Animations"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="50.0"/>
+                <prop id="4" list="0" val="3"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="13" list="0" val="p2_shoot"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="16" list="0" val="true"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="false"/>
+                <prop id="19" list="0" val="1.0"/>
+                <prop id="20" list="0" val="0.0"/>
+                <prop id="21" list="0" val="false"/>
+                <prop id="22" list="0" val="false"/>
+                <prop id="23" list="0" val="3.0"/>
+                <prop id="24" list="0" val="5.0"/>
+                <prop id="25" list="0" val="5.0"/>
+                <prop id="26" list="0" val="false"/>
+                <prop id="28" list="0" val="up"/>
+                <prop id="29" list="0" val="down"/>
+                <prop id="30" list="0" val="left"/>
+                <prop id="31" list="0" val="right"/>
+            </s>
+            <s enabled="true" id="15">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+</pack>
